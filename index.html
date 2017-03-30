@@ -1,0 +1,306 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Telefonia celular</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" type="text/css" href="css/tema-app2.min.css">
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>-->
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/historia1_2.jpg','imagenes/viejo1_2.png','imagenes/definicion1_2.jpg','imagenes/definicion2_2.jpg')">
+  
+  <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Telefonia celular en México</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>Telefono celular</h1>
+      <div>
+        <p>Los celulares</p>
+        <br>
+      </div>
+      <div>
+        <img src="imagenes/definicion1.jpg">
+      </div>
+    </div>
+  </div>
+ <div>
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+    <a href="#definicion" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>DEFINICION</h2>
+      <p>Se muestra la definicion general de el celular</p>
+    </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#historia" class=" ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>HISTORIA</h2>
+      <p>Se muestra una pequeña historia de el celular</p>
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+     <a href="#clasificacion" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>CLASIFICACION</h2>
+       <p>Se muestra la clasificacion de celulares en gama, media baja y alta</p>
+     </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+     <a href="#companias" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>COMPAÑIAS</h2>
+       <p>Semuestra algunas compañía que ofresen servicio en México</p>
+     </a>
+   </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#telefonosfuturo" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>TELEFONOS FUTUROS</h2>
+         <p>Muestra algunos proyectos futuros de los telefonos</p>
+       </a>
+     </li>
+   </ul>
+ </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="imagenes/celular_bajo.png" width="70" height="120">
+   </div>
+   <div>
+    <h4>Aplicacion Dos</h4>
+    <h4>María Guadalupe Moreno Cruz</h4>
+   </div>
+  </div>
+ </div>
+   <div data-role="page" id="definicion" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>Definiciones</h1>
+     </div>
+       <div data-role="content" align="center">
+         <div data-role="collapsible" data-content-theme="false">
+           <h2>Ejemplo 1</h2>
+           <div>
+             <p align="center">Este es un ejemplo:</p>
+             <br>
+           </div>
+           <div>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('definicion1','','imagenes/definicion1_2.jpg',1)"><img src="imagenes/definicion1.jpg" width="216" height="233" id="definicion1"></a> </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+           <h2>Ejemplo 2</h2>
+           <div>
+             <p align="center">Este es otro ejemplo:</p>
+             <br>
+           </div>
+           <div>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('definicion2','','imagenes/definicion2_2.jpg',1)"><img src="imagenes/definicion2.jpg" width="652" height="482" id="definicion2"></a> </div>
+         </div>
+        <p align="center">Aparato telefónico de pequeño tamaño, portátil, sin hilos ni cables externos, para poder hablar desde cualquier lugar, siempre que sea dentro del área de cobertura del servicio que lo facilita</p>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Dos, MGMC</h4>
+      </div>
+    </div>
+  <!--</div>-->
+  
+  <div data-role="page" id="historia" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Historias</h1>
+     </div>
+       <div data-role="content">
+           <div data-role="collapsible" data-content-theme="false">
+           <h2>Historia 1</h2>
+           <div>
+             <p align="center">Esta es la historia del telefono:</p>
+             <br>
+           </div>
+           <div align="center">
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('historia1','','imagenes/historia1_2.jpg',1)"><img src="imagenes/historia1_1.jpg" width="300" height="300" id="historia1"></a> </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+           <h2>Historia 2</h2>
+           <div>
+             <p align="center">Esta es la historia del telefono:</p>
+             <br>
+           </div>
+           <div align="center">
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('historia2','','imagenes/viejo1_2.png',1)"><img src="imagenes/viejo1.JPG" width="300" height="300" id="historia2"></a> </div>
+         </div>
+         <p align="center">Tres décadas atrás fue creado el primer aparato que abrió el camino al desarrollo de la tecnología de telefonía móvil.
+
+Hace 30 años la compañía finlandesa Nokia creó el primer teléfono portátil: un aparato de 9,5 kilos que fue fabricado para ser utilizado en dentro los automóviles. Un año después empezó a ser comercializado un Motorola que pesaba doce veces menos: el DynaTAC 8000X. Catorce años más tarde vino un aparato liviano y elegante de sólo de 88 gramos.
+
+Las últimas invenciones parecían cada vez más increíbles: un móvil con cámara a color incorporada, la aparición de los teléfonos inteligentes con las últimas tecnologías en multimedia, un aparato con pantalla táctil. Desde el primer momento las innovaciones no han parado. </p> 
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Dos, MGMC</h4>
+      </div>
+      </div>
+      <!--</div>-->
+    
+    <div data-role="page" id="clasificacion" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>Gamas</h1>
+     </div>
+       <div data-role="content">
+         <h3 align="center">GAMA BAJA</h3>
+         <p align="center"> es un celular que solo sirve para llamar y recibir llamada, enviar y recibir sms, pues no tienen internet ni soporte para aplicaciones</p>
+         <div data-role="collapsible" data-content-theme="false">
+           <h2>Ejemplos gama baja</h2>
+           <div>
+             <p align="center">Semuestran ejemplos de gama baja</p>
+             <br>
+           </div>
+           <div align="center">
+             <img src="imagenes/gama_baja.jpg" width="300" height="300">
+           </div>
+         </div>
+          <h3 align="center">GAMA MEDIA</h3>
+         <p align="center">es un celular para llamar, sms, internet pero con poca memoria de procesamiento, lento en conexion a internet y con soporte para apps java</p>
+         <div data-role="collapsible" data-content-theme="false">
+           <h2>Ejemplos gama media</h2>
+           <div>
+             <p align="center">Semuestran ejemplos de gama media</p>
+             <br>
+           </div>
+           <div align="center">
+             <img src="imagenes/gama_media.jpg" width="300" height="300">
+           </div>
+         </div>
+         <h3 align="center">GAMA ALTA</h3>
+         <p align="center">celular inteligente con gran capacidad de procesamiento tanto de internet como en archivos practicamente sin las limitaciones de los de gama baja y media</p>
+         <div data-role="collapsible" data-content-theme="false">
+           <h2>Ejemplos gama alta</h2>
+           <div>
+             <p align="center">Semuestran ejemplos de gama alta</p>
+             <br>
+           </div>
+           <div align="center">
+             <img src="imagenes/gama_alta.jpg" width="300" height="300">
+           </div>
+         </div>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Dos, MGMC</h4>
+      </div>
+      </div>
+      <!--</div>-->
+      
+      <div data-role="page" id="companias" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>COMPAÑIAS</h1>
+        </div>
+        <div data-role="content"  align="center">
+          <div data-role="collapsible" data-content-theme="false">
+             <h2>compañía 1</h2>
+             <div>
+               <p>clic en la imagen para ir a la pagina de la compañía</p>
+               <br>
+             </div>
+             <div>
+               <a href="http://www.telcel.com/"><img src="imagenes/telcel.png" width="200" height="200"></a>
+             </div>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">
+            <h2>compañía 2</h2>
+            <div>
+              <p align="center">clic en la imagen para ir a la pagina de la compañía</p>
+              <br>
+            </div>
+            <div>
+              <a href="https://www.movistar.com/es/"><img src="imagenes/movistar.png" width="200" height="200"></a>
+            </div>
+          </div>
+           <div data-role="collapsible" data-content-theme="false">
+           <h2>compañía 3</h2>
+           <div>
+             <p align="center">clic en la imagen para ir a la pagina de la compañía</p>
+             <br>
+           </div>
+           <div>
+             <a href="https://www.att.com.mx/index.html?gclid=CMOhgMv3_tICFYi1wAodQhAEew&gclsrc=aw.ds"><img src="imagenes/atyt.png" width="200" height="200"></a>
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+           <h2>compañía 4</h2>
+           <div>
+             <p align="center">clic en la imagen para ir a la pagina de la compañía</p>
+             <br>
+           </div>
+           <div>
+             <a href="https://www.unefon.com.mx/?gclid=CNXM66j3_tICFQMHaQod1dUGpQ&gclsrc=aw.ds"><img src="imagenes/unefon.png" width="200" height="200"></a>
+           </div>
+         </div>
+        </div>
+         <div data-role="footer" data-theme="a" data-position="fixed">
+            <h4>Aplicacion Uno, MGMC</h4>
+         </div>
+      </div>
+      <!--</div>-->
+      
+      <div data-role="page" id="telefonosfuturo" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>TELEFONOS DEL FUTURO</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div data-role="collapsible" data-content-theme="false">
+             <h2>telefono 1</h2>
+             <div>
+               <img src="imagenes/telefonof1.jpg" width="500" height="500">
+             </div>
+          </div>
+          <div data-role="collapsible" data-content-theme="false">
+            <h2>telefono 2</h2>
+            <div>
+              <img src="imagenes/telefonof2.jpg" width="500" height="500">
+            </div>
+          </div>
+           <div data-role="collapsible" data-content-theme="false">
+           <h2>telefono 3</h2>
+           <div>
+             <img src="imagenes/telefonof3.jpg" width="500" height="500">
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+           <h2>telefono 4</h2>
+           <div>
+             <img src="imagenes/telefonof4.jpg" width="500" height="500">
+           </div>
+         </div>
+        </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4>Aplicacion Uno, MGMC</h4>
+        </div>
+      </div>
+      <!--</div>-->
+</body>
+</html>
